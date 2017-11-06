@@ -10,7 +10,8 @@ DONE need to create migration and model for payment
 payment needs date of payment and amount of payment
 timestamps (could play with datetime.now) for date of payment (what time zone? maybe stick to UTC)
 outstanding balance should be `funded_amount` - the sum of all of the payment amounts belonging to that loan
-if payment amount exceeds outstanding balance, prohibit payment creation and return validation errors
+validation
+  if payment amount exceeds outstanding balance, prohibit payment creation and return validation errors
 need payment controller (rails generate?)
   need payment#show
   need payment#index

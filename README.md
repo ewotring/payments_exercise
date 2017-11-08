@@ -18,3 +18,9 @@ DONE need payment controller (rails generate?; did not use)
   need payment#index
 Do I need additional columns for the loan table?
   outstanding_balance could go into the loan table as a column
+
+STICKING POINTS
+trouble with virtual machine caused delays
+didn't figure out how to make a payment from the address bar (but does work in console)
+error message is not clearly displayed when a payment is attempted that is larger than the outstanding balance
+test syntax confusing me for nested routes

@@ -10,7 +10,7 @@ RSpec.describe Payment, type: :model do
     it 'returns error message' do
       loan = Loan.create!(funded_amount: 100.0)
       payment = loan.payments.create(payment_amount: 200.0, loan_id: loan.id)
-      expect{payment.save!}.to raise_error
+      expect{payment.save!}.to raise_error#("Payment cannot exceed outstanding balance.")
       # Had trouble specifying the error
     end
   end
